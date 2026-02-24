@@ -2,13 +2,73 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leaf & Bean Café</title>
     <!-- <link rel="stylesheet" href="pages/css/style.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
+    <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mybt.html">Bootstrap Page</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+        </ul>
+
+        <!-- Nav Tabs -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mybt.html">Bootstrap Page</a>
+            </li>
+        </ul>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Nav Pills-->
+         
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Brand</a>
+                <button class="navbar-toggler" type="button" 
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#darkNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="darkNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" 
+                            role="button" data-bs-toggle="dropdown">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Web Design</a></li>
+                                <li><a class="dropdown-item" href="#">Development</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">SEO</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Search Form -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     <header>
         <h1>🍃 Leaf & Bean Café</h1>
         <nav>
@@ -23,30 +83,37 @@
         <h2>กาแฟดี ๆ เริ่มต้นที่นี่</h2>
         <p>คัดสรรเมล็ดกาแฟคุณภาพจากดอยสูง ชงสดใหม่ทุกแก้ว</p>
     </section>
-
     <!-- ส่วนเมนู -->
     <section id="menu">
-            <h2>เมนูแนะนำ</h2>
-            <div>
-        <!-- การ์ดเมนูที่ 1 -->
-        <div>
-            <h3>☕ Espresso</h3>
-            <p>เข้มข้น หอมกรุ่น คั่วกลางจากดอยช้าง</p>
-            <p>ราคา: <span>฿55</span></p>
+        <h2>เมนูแนะนำ</h2>
+        <div class="container">
+            <div class="row">
+            <!-- การ์ดเมนูที่ 1 -->
+                <div class="col-12 col-md-6 col-lg-3 border p-3 mb-4 rounded shadow-sm">
+                    <h3>☕ Espresso</h3>
+                    <p>เข้มข้น หอมกรุ่น คั่วกลางจากดอยช้าง</p>
+                    <p>ราคา: <span>฿55</span></p>
+                </div>
+                <!-- การ์ดที่ 2 -->
+                <div class="col-12 col-md-6 col-lg-3 border p-3 mb-4 rounded shadow-sm">
+                    <h3>🍵 Matcha Latte <span>BEST SELLER</span></h3>
+                    <p>ชาเขียวเกรดพรีเมียมจากอุจิ</p>
+                    <p>฿75</p>
+                </div>
+                <!-- การ์ดที่ 3 -->
+                <div class="col-12 col-md-6 col-lg-3 border p-3 mb-4 rounded shadow-sm">
+                    <h3>🧊 Cold Brew</h3>
+                    <p>สกัดเย็น 18 ชั่วโมง นุ่มลึก</p>
+                    <p>฿65</p>
+                </div>
+                <!-- การ์ดที่ 4 -->
+                <div class="col-12 col-md-6 col-lg-3 border p-3 mb-4 rounded shadow-sm">
+                    <h3>🥤 Mocha</h3>
+                    <p>กาแฟผสมช็อกโกแลต หอมหวาน</p>
+                    <p>฿70</p>
+                </div>
+            </div>
         </div>
-        <!-- การ์ดที่ 2 -->
-        <div>
-            <h3>🍵 Matcha Latte <span>BEST SELLER</span></h3>
-            <p>ชาเขียวเกรดพรีเมียมจากอุจิ</p>
-            <p>฿75</p>
-        </div>
-        <!-- การ์ดที่ 3 -->
-        <div>
-            <h3>🧊 Cold Brew</h3>
-            <p>สกัดเย็น 18 ชั่วโมง นุ่มลึก</p>
-            <p>฿65</p>
-        </div>
-    </div>
     </section>
 
     <!-- เรื่องราวร้าน — เนื้อหาอิสระ ใช้ <article> -->
@@ -67,7 +134,35 @@
     <p>จันทร์ - ศุกร์: 7:00 - 20:00</p>
     <p>เสาร์ - อาทิตย์: 8:00 - 21:00</p>
 </aside>
+<p class="h1">h1. Bootstrap heading</p>
+<p class="h2">h2. Bootstrap heading</p>
+<p class="h3">h3. Bootstrap heading</p>
 
+<!-- Display Headings (ใหญ่กว่าปกติ) -->
+<h1 class="display-1">Display 1</h1>
+<h1 class="display-4">Display 4</h1>
+<button class="btn btn-primary">Primary Button</button>
+<!-- Text Colors -->
+<p class="text-primary">Primary</p>
+<p class="text-success">Success</p>
+<p class="text-danger">Danger</p>
+<p class="text-warning">Warning</p>
+<p class="text-info">Info</p>
+<p class="text-muted">Muted</p>
+
+<!-- Background Colors -->
+<div class="bg-primary text-white">Primary BG</div>
+<div class="bg-success text-white">Success BG</div>
+<div class="bg-light text-dark">Light BG</div>
+<div class="bg-dark text-white">Dark BG</div>
+<!-- Margin -->
+<div class="mt-3">margin-top: 1rem</div>
+<div class="mb-5">margin-bottom: 3rem</div>
+<div class="mx-auto">margin-left/right: auto (จัดกลาง)</div>
+
+<!-- Padding -->
+<div class="p-4">padding: 1.5rem ทุกด้าน</div>
+<div class="py-3 px-5">padding-y: 1rem, padding-x: 3rem</div>
 <footer id="contact">
     <p>&copy; 2026 Leaf & Bean Café</p>
     <p>📍 ม.ศิลปากร วิทยาเขตสนามจันทร์ จ.นครปฐม</p>
